@@ -91,5 +91,14 @@ export  $initHighlight;
 |hernan | cuervo | 123489 |
 
 
+# citas
+
+Esto es un texto referente a una cita pondremos debajo:
+>Esto es una cita
+
+Esto es otro texto que no se relaciona con la cita anterior:
+>Esto es otra cita
+
+
 
 
