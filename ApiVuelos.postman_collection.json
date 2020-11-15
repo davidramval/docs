@@ -1,0 +1,279 @@
+{
+	"info": {
+		"_postman_id": "32467fa2-5144-4175-9ab2-3ad32e3f0c18",
+		"name": "ApiVuelos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "vuelos",
+			"item": [
+				{
+					"name": "crear Vuelos y añadir id de pasajero",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroVuelo\":\"azsx14\",\r\n    \"codigoAvion\":\"qwet4567\",\r\n    \"fechaSalida\":\"2020-11-12\",\r\n    \"idCiudadSalida\":2,\r\n    \"idCiudadDestino\":1,\r\n    \"pasajeroList\":[\r\n        {\r\n            \"id\":1\r\n        },\r\n        {\r\n            \"id\":2\r\n        }\r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9898/api/vuelos",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"vuelos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar toda la lista de Vuelos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9898/api/vuelos/all",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"vuelos",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar Vuelo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"numeroVuelo\":\"sx14\",\r\n    \"codigoAvion\":\"qwet45\",\r\n    \"fechaSalida\":\"2020-11-12\",\r\n    \"codigoCiudadSalida\":3,\r\n    \"codigoCiudadDestino\":7,\r\n    \"pasajeroList\":[\r\n         {\r\n            \"id\":1\r\n        },\r\n        {\r\n            \"id\":2\r\n        }      \r\n    ]\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9898/api/vuelos/5",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"vuelos",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "borrar Vuelo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9898/api/vuelos/id/7",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"vuelos",
+								"id",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "pasajeros",
+			"item": [
+				{
+					"name": "crear Pasajero",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombres\":\"hernan\",\r\n    \"apellidos\":\"cuervo\",\r\n    \"tipoDocumento\":\"cc\",\r\n    \"numeroDocumento\":1036637,\r\n    \"telefono\":\"32145600\",\r\n    \"direccion\":\"pradito\",\r\n    \"correo\":\"correoc@correo.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9898/api/pasajero",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"pasajero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "actualizar Pasajero",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombres\":\"santiago\",\r\n    \"apellidos\":\"lopez\",\r\n    \"telefono\":\"32145600\",\r\n    \"direccion\":\"itagui\",\r\n    \"correo\":\"correoc@correo.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9898/api/pasajero/2",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"pasajero",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "eliminar Pasajero",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:9898/api/pasajero/3",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"pasajero",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar Pasajero por numero de documento ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9898/api/pasajero/numeroDocumento/10000111",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"pasajero",
+								"numeroDocumento",
+								"10000111"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar toda la lista de Pasajeros ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9898/api/pasajero/all",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"pasajero",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar Pasajero por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9898/api/pasajero/2",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"pasajero",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar Pasajero por nombre",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9898/api/pasajero/nombres/santiago",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"pasajero",
+								"nombres",
+								"santiago"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
