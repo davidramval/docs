@@ -43,6 +43,7 @@ foreign key (id_pasajero) references pasajeros(id)
 insert into pasajeros (nombres, apellidos, tipo_documento, numero_documento, telefono, direccion, correo) values (" david", "ramirez", "cc", 1036637050, "3014567890", "lomas", "correo@correo.com");
 insert into pasajeros (nombres, apellidos, tipo_documento, numero_documento, telefono, direccion, correo) values ("hernan", "cuervo", "ce", 103663745, "3014501990", "prado", "correocorreo@correo.com");
 insert into pasajeros (nombres, apellidos, tipo_documento, numero_documento, telefono, direccion, correo) values ("wilinton", "lopez", "cc", 10366350, "5983014567890", "palmar", "correoco@correo.com");
+insert into pasajeros (nombres, apellidos, tipo_documento, numero_documento, telefono, direccion, correo) values ("santiago", "ramirez", "cc", 10366370, "3014567890", "lomas", "correo@correo.com");
 
 insert into ciudades (nombre_ciudad) values ("medellin");
 insert into ciudades (nombre_ciudad) values ("bogota");
