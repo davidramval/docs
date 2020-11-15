@@ -63,7 +63,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"numeroVuelo\":\"sx14\",\r\n    \"codigoAvion\":\"qwet45\",\r\n    \"fechaSalida\":\"2020-11-12\",\r\n    \"codigoCiudadSalida\":3,\r\n    \"codigoCiudadDestino\":4,\r\n    \"pasajeroList\":[\r\n         {\r\n            \"id\":5\r\n        },\r\n        {\r\n            \"id\":4\r\n        }      \r\n    ]\r\n}\r\n",
+							"raw": "{\r\n    \"numeroVuelo\":\"sx14\",\r\n    \"codigoAvion\":\"qwet45\",\r\n    \"fechaSalida\":\"2020-11-12\",\r\n    \"codigoCiudadSalida\":3,\r\n    \"codigoCiudadDestino\":4,\r\n    \"pasajeroList\":[\r\n         {\r\n            \"id\":2\r\n        },\r\n        {\r\n            \"id\":5\r\n        }      \r\n    ]\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
