@@ -15,7 +15,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"numeroVuelo\":\"sx14\",\r\n    \"codigoAvion\":\"qwet45\",\r\n    \"fechaSalida\":\"2020-11-12\",\r\n    \"codigoCiudadSalida\":1,\r\n    \"codigoCiudadDestino\":5,\r\n    \"pasajeroList\":[\r\n        {\r\n            \"id\":2\r\n        },\r\n        {\r\n            \"id\":5\r\n        }\r\n    ]\r\n}\r\n",
+							"raw": "{\r\n    \"numeroVuelo\":\"22222\",\r\n    \"codigoAvion\":\"11111\",\r\n    \"fechaSalida\":\"2020-12-12\",\r\n    \"ciudadSalida\": {\r\n            \"id\": 1\r\n        },\r\n        \"ciudadDestino\": {\r\n            \"id\": 5\r\n        },\r\n    \"pasajeroList\":[\r\n        {\r\n            \"id\":4\r\n        },\r\n        {\r\n            \"id\":5\r\n        }\r\n    ]\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -100,6 +100,26 @@
 								"api",
 								"vuelos",
 								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar vuelo por id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:9898/api/vuelos/5",
+							"host": [
+								"localhost"
+							],
+							"port": "9898",
+							"path": [
+								"api",
+								"vuelos",
+								"5"
 							]
 						}
 					},
