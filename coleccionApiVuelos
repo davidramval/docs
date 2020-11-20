@@ -63,7 +63,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"numeroVuelo\":\"sx14\",\r\n    \"codigoAvion\":\"qwet45\",\r\n    \"fechaSalida\":\"2020-11-12\",\r\n    \"codigoCiudadSalida\":3,\r\n    \"codigoCiudadDestino\":4,\r\n    \"pasajeroList\":[\r\n         {\r\n            \"id\":2\r\n        },\r\n        {\r\n            \"id\":5\r\n        }      \r\n    ]\r\n}\r\n",
+							"raw": "{\r\n    \"numeroVuelo\":\"sx14\",\r\n    \"codigoAvion\":\"qwet45\",\r\n    \"fechaSalida\":\"2020-11-12\",\r\n    \"ciudadSalida\": {\r\n            \"id\": 1\r\n        },\r\n        \"ciudadDestino\": {\r\n            \"id\": 5\r\n        },\r\n    \"pasajeroList\":[\r\n         {\r\n            \"id\":6\r\n        },\r\n        {\r\n            \"id\":2\r\n        }      \r\n    ]\r\n}\r\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -71,7 +71,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:9898/api/vuelos/4",
+							"raw": "localhost:9898/api/vuelos/6",
 							"host": [
 								"localhost"
 							],
@@ -79,7 +79,7 @@
 							"path": [
 								"api",
 								"vuelos",
-								"4"
+								"6"
 							]
 						}
 					},
